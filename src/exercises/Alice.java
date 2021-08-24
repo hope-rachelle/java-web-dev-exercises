@@ -16,7 +16,7 @@ public class Alice {
          if (sentence.toLowerCase(Locale.ROOT).contains(term.toLowerCase(Locale.ROOT))) {
              System.out.println("Alice in Wonderland contains the word " + term);
              System.out.println("index of " + term + ":" + sentence.indexOf(term));
-             String newSentence =  sentence.substring (0, sentence.indexOf(term))+ "\n" + sentence.substring((sentence.indexOf(term)+term.length()+1), sentence.length());
+             String newSentence =  sentence.substring (0, sentence.indexOf(term))+ "\n" + sentence.substring((sentence.indexOf(term) + term.length()+1));
              System.out.println(newSentence);
          } else {
              System.out.println(term + " is not found in Alice in Wonderland");
