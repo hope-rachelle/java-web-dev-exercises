@@ -1,4 +1,4 @@
-package org.launchcode.java.studios.areaofacircle;
+package org.launchcode.java.studios.AreaofCircle;
 
 import java.util.Scanner;
 

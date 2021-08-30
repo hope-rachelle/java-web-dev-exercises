@@ -7,5 +7,12 @@ public class HelloWorld {
         System.out.println("Hello, What is your name:");
         String name = input.nextLine();
         System.out.println("Hello " + name);
+        do {
+
+
+            System.out.println("Hello world!");
+
+
+        } while (3 < 2);
     }
 }
