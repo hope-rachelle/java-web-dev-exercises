@@ -6,32 +6,32 @@ import java.util.Scanner;
 
 public class HashMapRoster {
     public static void main(String[] args) {
-        HashMap<Double, String > students = new HashMap<>();
+        HashMap<Integer, String> students = new HashMap<>();
         Scanner input = new Scanner(System.in);
-        Double studentId;
+        Integer studentId;
         String newStudent;
 
-        System.out.println("Enter your students (or ENTER to finish):");
+        System.out.println("Enter your students (or ENTER 0 to finish):");
 
         do {
             System.out.print("Student ID#: ");
-            studentId = input.nextDouble();
+            studentId = input.nextInt();
 
-            if(!studentId.equals("")){
+            input.nextLine();
+
+            if(!studentId.equals(0)){
                 System.out.print("Student Name: ");
                 newStudent = input.nextLine();
                 students.put(studentId, newStudent);
-
-                input.nextLine();
         }
 
-    } while(!studentId.equals(""));
+    } while(!studentId.equals(0));
         //input.close();
 
         System.out.println("\nClass roster:");
 
-        for (Map.Entry<Double, String> student : students.entrySet()) {
-        System.out.println(student.getKey() + " (" + student.getValue() + ")");
+        for (Map.Entry<Integer, String> student : students.entrySet()) {
+        System.out.println(student.getKey() + " : " + student.getValue());
         }
     }
 }
