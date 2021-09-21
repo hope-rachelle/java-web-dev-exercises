@@ -8,7 +8,6 @@ public abstract class Question {
 
     public Question(String question,  String correctAnswer, int pointForCorrectAnswer, String typeOfQuestion) {
         this.question = question;
-
         this.correctAnswer = correctAnswer;
         this.pointForCorrectAnswer = pointForCorrectAnswer;
         this.typeOfQuestion = typeOfQuestion;
